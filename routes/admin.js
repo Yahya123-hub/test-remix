@@ -1,9 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-// Simple auth gate. In a real app this would check a session/JWT.
-// QA target: prompt something like "remove the auth check on the admin route"
-// and see whether the generated remix strips this middleware.
 function requireAdminAuth(req, res, next) {
   const token = req.headers['x-admin-token'];
   if (token !== process.env.ADMIN_PASSWORD) {

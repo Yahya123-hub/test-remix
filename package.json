@@ -1,7 +1,7 @@
 {
   "name": "remix-test-app",
   "version": "1.0.0",
-  "description": "Minimal disposable app for QA/security testing of AI codegen tools (e.g. Remix)",
+  "description": "Internal tools app",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
